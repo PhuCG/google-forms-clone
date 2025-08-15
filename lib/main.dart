@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'home_tabs_page.dart';
 
 void main() {
-  runApp(ProviderScope(child: MyApp()));
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
           contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         ),
       ),
-      home: Text('Hello'),
+      home: HomeTabsPage(),
     );
   }
 }
